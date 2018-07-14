@@ -6,8 +6,7 @@ def roll_call_dwarves(array)
 end
 
 def summon_captain_planet(array)
-  array.map do |call|
-    "#{call[0].upcase + call [1..-1]}!"
+  array.collect {|call| call + "!"}
   # Your code here
 end
 
