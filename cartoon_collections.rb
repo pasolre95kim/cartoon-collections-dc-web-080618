@@ -1,8 +1,13 @@
-def roll_call_dwarves# code an argument here
+def roll_call_dwarves(array)
+  array.each_with_index do |dwarves, index|
+  puts "#{index+1}. #{dwarves}"
   # Your code here
+  end
 end
 
-def summon_captain_planet# code an argument here
+def summon_captain_planet(array)
+  array.map do |call|
+    "#{call[0].upcase + call [1..-1]}!"
   # Your code here
 end
 
